@@ -1,20 +1,22 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("");
+        System.out.println("----Metodo burbuja---- ");
         Metodo m = new Metodo();
-        int [] arre = {0,10,-10,5,9};
+        int [] arre = {64,25,12,22,11};
+        System.out.println("Arreglo original");
+
         m.imprimir(arre);
-        m.burbuja(arre,true);
+        System.out.println("Arreglo ordenado ascendentemente ");
+        m.ordenascendente(arre);
         m.imprimir(arre);
-        m.burbuja(arre, false);
-        m.imprimir(arre);
-        // int[] multi=new int [1000];
-        // for(int i=0;i<multi.length;i++){
-        //     multi[i]=(int)(Math.random()*1000)+1;
-        // }
-        // m.imprimir(multi);
+        System.out.println("---Metodo seleccion----");
         Seleccion s = new Seleccion();
         int [] arre2 = {64,25,12,22,11};
+        System.out.println("Arreglo original");
+        s.printarreglo(arre2);
+        System.out.println("\n"+"Arreglo ordenado descendentemente");
+        s.Seleccionascendente(arre2);
+        s.printarreglo(arre2);
         //s.printarreglo(arre2);
        // s.Seleccionascendente(arre2);
         //s.Seleccionascendente(arre);
@@ -28,13 +30,15 @@ public class App {
         // s.ordenardesle(multi, false);
         // s.printarreglo(multi);
 
-        //metodo de inserccion 
+        //metodo de inserccion
+        System.out.println("\n");
+        System.out.println("----Metodo inserccion----"); 
         Inserccion i = new Inserccion();
         i.printarreglo(arre2);
         i.ordenascendente(arre2, true);
         i.printarreglo(arre2);
         System.out.println("\n"+"inserccion sin pasos"); 
-        i.printarreglo(arre2);
+      
         i.ordenascendente(arre2, false);
         i.printarreglo(arre2);
 

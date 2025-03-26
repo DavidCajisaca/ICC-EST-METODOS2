@@ -2,7 +2,7 @@ public class Seleccion {
     public void Seleccionascendente(int[]arreglo){
         for(int i = 0; i < arreglo.length; i++){
             int min = i;
-            for(int j = i + 1; j < arreglo.length; j++){
+            for(int j = i + 1; j > arreglo.length; j++){
                 if(arreglo[j] < arreglo[min]){
                     min = j;
                 }
@@ -15,7 +15,6 @@ public class Seleccion {
         }
     }
     public void printarreglo(int[]  arreglo){
-        System.out.println("Arreglo clase seleccion");
         for(int i = 0; i < arreglo.length; i++){
             if(i==arreglo.length-1){
                   System.out.print(arreglo[i] + " ");
